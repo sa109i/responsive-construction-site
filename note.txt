@@ -1,0 +1,34 @@
+==== HEADER ====
+.header 
+ .site-logo
+ .nav-menu
+  .nav-links 
+  .nav-item
+  Home . About Us . Services . Projects . Contact Us
+
+==== MAIN ====
+.main
+
+=== HOME ====
+ .home
+  .home-content
+
+   .home-heading
+   Create The constructions you want here
+
+   .home-subheading
+   We provide the best home design, construction and maintenance services for you and your family
+
+   .home-buttons
+   Our Services
+   View Projects
+
+    .home-experience
+    10+ Years of experience
+
+    .home-projects 
+    200 complete projects
+  .home-imgs
+
+
+
