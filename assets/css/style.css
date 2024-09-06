@@ -8,7 +8,6 @@
 
 body{
     overflow-x: hidden;
-    background-color: #f00;
 }
 
 :root{
@@ -23,6 +22,7 @@ body{
 /* === REUSABLE CSS CLASSES === */
 .section{
     padding: 80px 7vw;
+    overflow-x: hidden;
 }
 
 .section-title,
