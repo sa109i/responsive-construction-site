@@ -92,8 +92,9 @@ const sr = ScrollReveal({
     origin: 'top'
 });
 
-sr.reveal('.home-content, .services, .footer');
+sr.reveal('.home-content, .services, .footer-container');
 sr.reveal('.home-image', { origin: 'bottom', delay: 1000 })
 sr.reveal('.about-section-images, .contact-image', {origin: 'left'})
 sr.reveal('.about-content, .contact-boxs', {origin: 'right'})
-sr.reveal('.project-cards', {interval: 100})
+sr.reveal('.project-card', {interval: 400})
+sr.reveal('.company-info-item', {interval: 400})

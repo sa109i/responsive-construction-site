@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --dark-blue: #14111D;
     --light-gray: #9892A3;
@@ -28,6 +32,7 @@
 .section-title{
     color: var(--light-yellow);
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .small-text{
@@ -134,12 +139,13 @@ i, .btn{
 
 .nav-close{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 40px;
 }
 
 .nav-close,
 .nav-open{
+    color: white;
     font-size: 1.2rem;
 }
 
@@ -276,6 +282,10 @@ i, .btn{
     row-gap: 20px;
 }
 
+.about-us{
+    margin-bottom: 0px;
+}
+
 .about-section-paragraph{
     font-size: var(--small-text);
 }
@@ -319,9 +329,9 @@ i, .btn{
 
 /* === SERVICES === */
 .services{
-    display: flex;
-    flex-direction: column;
     text-align: center;
+    position: relative;
+    background-image: linear-gradient(white 55%, var(--dark-blue) 45%);
 }
 
 .service-content{
@@ -414,31 +424,15 @@ i, .btn{
     position: relative;
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-}
-
-.dark-background{
-    position: absolute;
-    background: var(--dark-blue);
-    top: -15%;
-    left: -7vw;
-    right: 0;
-    bottom: 0;
-    z-index: -10;
+    background-color: var(--dark-blue);
 }
 
 .project-cards{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
-    column-gap: 20px;
+    gap: 20px;
+    margin-top: 50px;
 }
 
 .project-card{
@@ -637,6 +631,10 @@ i, .btn{
 /* === For small devices === */
 @media screen and (max-width: 340px){
     .section{
+        padding: 40px 0vw;
+    }
+
+    .section{
         padding-inline: 1rem;
     }
 
@@ -677,7 +675,7 @@ i, .btn{
         position: relative;
         width: 100%;
     }
-    
+
     .about{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 50px;
